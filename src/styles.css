@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  font-family: monospace;
+}
+
+.notifier-limit {
+  text-align: right;
+}
+
+mat-card-content {
+  margin-top: 20px;
+}
+
+.table-container {
+  overflow: auto;
+}
+
+table.data-table {
+  width: 100%;
+}
+
+table.data-table tr th {
+  width: 33%;
+  min-width: 200px;
+}
+
+table.data-table tr th > div {
+  width:  auto;
+  margin: 0 auto;
+}
+
+table.data-table tr th.mat-header-cell {
+  text-align: center;
+}
+
+table.data-table tr th .mat-sort-header-container {
+  position: relative;
+  display: inline-block;
+}
+
+table.data-table tr th .mat-sort-header-arrow {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
+
+table.data-table tr td {
+  text-align: center;
+}
+
+.svg-icon {
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  display: block;
+  cursor: pointer;
+  margin-right: 5px;
+  float: left;
+}
+
+.trash-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='trash-alt' class='svg-inline--fa fa-trash-alt fa-w-14' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272 68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.edit-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='edit' class='svg-inline--fa fa-edit fa-w-18' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='currentColor' d='M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.read-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg aria-hidden='true' data-prefix='fab' data-icon='readme' class='svg-inline--fa fa-readme fa-w-18' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath fill='currentColor' d='M528.3 46.5H388.5c-48.1 0-89.9 33.3-100.4 80.3-10.6-47-52.3-80.3-100.4-80.3H48c-26.5 0-48 21.5-48 48v245.8c0 26.5 21.5 48 48 48h89.7c102.2 0 132.7 24.4 147.3 75 .7 2.8 5.2 2.8 6 0 14.7-50.6 45.2-75 147.3-75H528c26.5 0 48-21.5 48-48V94.6c0-26.4-21.3-47.9-47.7-48.1zM242 311.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5V289c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V251zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm259.3 121.7c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5V228c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.8c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V190z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.datepicker {
+  width: 120px;
+}
+
+.timepicker {
+  margin: 0 auto;
+}
+
+.timepicker .mat-form-field {
+  width: 60px;
+}
+
+.timepicker input {
+  cursor: pointer;
+}
+
+.controls {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.price {
+  cursor: default;
+  display: inline-block;
+}
+
+.date {
+  cursor: default;
+}
+
+svg {
+  animation: blink-animation 1s steps(25, start) 4;
+  -webkit-animation: blink-animation 1s steps(25, start) 4;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
